@@ -1,0 +1,14 @@
+AR sevsegdecoder behavioral D:/VHDL/HOTNCOLDGAME/SevSegDecoder.vhd sub00/vhpl11 1543518301
+AR randgen behavioral D:/VHDL/HOTNCOLDGAME/RandGen.vhd sub00/vhpl01 1543518291
+AR clkdiv behavioral D:/VHDL/HOTNCOLDGAME/ClkDiv.vhd sub00/vhpl07 1543518297
+EN sevsegdriver NULL D:/VHDL/HOTNCOLDGAME/SevSegDriver.vhd sub00/vhpl08 1543518298
+EN hotncold NULL D:/VHDL/HOTNCOLDGAME/Main.vhd sub00/vhpl12 1543518302
+EN sevsegdecoder NULL D:/VHDL/HOTNCOLDGAME/SevSegDecoder.vhd sub00/vhpl10 1543518300
+AR bintobcd behavioral D:/VHDL/HOTNCOLDGAME/binToBCD.vhd sub00/vhpl05 1543518295
+EN clkdiv NULL D:/VHDL/HOTNCOLDGAME/ClkDiv.vhd sub00/vhpl06 1543518296
+EN randgen NULL D:/VHDL/HOTNCOLDGAME/RandGen.vhd sub00/vhpl00 1543518290
+EN bintobcd NULL D:/VHDL/HOTNCOLDGAME/binToBCD.vhd sub00/vhpl04 1543518294
+AR sevsegdriver behavioral D:/VHDL/HOTNCOLDGAME/SevSegDriver.vhd sub00/vhpl09 1543518299
+AR hotncold behavioral D:/VHDL/HOTNCOLDGAME/Main.vhd sub00/vhpl13 1543518303
+EN comparator NULL D:/VHDL/HOTNCOLDGAME/Comparator.vhd sub00/vhpl02 1543518292
+AR comparator behavioral D:/VHDL/HOTNCOLDGAME/Comparator.vhd sub00/vhpl03 1543518293

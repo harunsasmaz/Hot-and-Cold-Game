@@ -1,0 +1,7 @@
+vhdl work "SevSegDriver.vhd"
+vhdl work "SevSegDecoder.vhd"
+vhdl work "RandGen.vhd"
+vhdl work "Comparator.vhd"
+vhdl work "ClkDiv.vhd"
+vhdl work "binToBCD.vhd"
+vhdl work "Main.vhd"

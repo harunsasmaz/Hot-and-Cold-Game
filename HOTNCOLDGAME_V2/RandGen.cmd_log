@@ -1,0 +1,2 @@
+vhdtdtfi -lib work RandGen.vhd -prj HOTNCOLDGAME -o RandGen.spl -module RandGen -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a RandGen.spl D:/VHDL/HOTNCOLDGAME/RandGen.sym 

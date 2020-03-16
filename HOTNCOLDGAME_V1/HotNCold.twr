@@ -1,0 +1,183 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf
+-ucf MainUcf.ucf
+
+Design file:              HotNCold.ncd
+Physical constraint file: HotNCold.pcf
+Device,package,speed:     xc3s50a,vq100,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+Enable      |    2.406(R)|    0.018(R)|CLK_BUFGP         |   0.000|
+Power       |    1.047(R)|    0.305(R)|CLK_BUFGP         |   0.000|
+Reset       |    3.006(R)|   -1.301(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    6.360|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+-----------------+---------+
+Source Pad     |Destination Pad  |  Delay  |
+---------------+-----------------+---------+
+Guess<0>       |Sevseg_digit<0>  |   10.907|
+Guess<0>       |Sevseg_digit<1>  |   11.716|
+Guess<0>       |Sevseg_digit<2>  |   11.144|
+Guess<0>       |Sevseg_digit<3>  |   11.059|
+Guess<0>       |Sevseg_digit<4>  |   11.235|
+Guess<0>       |Sevseg_digit<5>  |   11.334|
+Guess<0>       |Sevseg_digit<6>  |   10.894|
+Guess<1>       |Sevseg_digit<0>  |   13.619|
+Guess<1>       |Sevseg_digit<1>  |   14.035|
+Guess<1>       |Sevseg_digit<2>  |   13.835|
+Guess<1>       |Sevseg_digit<3>  |   13.716|
+Guess<1>       |Sevseg_digit<4>  |   13.581|
+Guess<1>       |Sevseg_digit<5>  |   14.177|
+Guess<1>       |Sevseg_digit<6>  |   13.386|
+Guess<2>       |Sevseg_digit<0>  |   16.013|
+Guess<2>       |Sevseg_digit<1>  |   16.429|
+Guess<2>       |Sevseg_digit<2>  |   16.229|
+Guess<2>       |Sevseg_digit<3>  |   16.110|
+Guess<2>       |Sevseg_digit<4>  |   15.975|
+Guess<2>       |Sevseg_digit<5>  |   16.571|
+Guess<2>       |Sevseg_digit<6>  |   15.780|
+Guess<3>       |Sevseg_digit<0>  |   18.564|
+Guess<3>       |Sevseg_digit<1>  |   18.782|
+Guess<3>       |Sevseg_digit<2>  |   18.490|
+Guess<3>       |Sevseg_digit<3>  |   18.427|
+Guess<3>       |Sevseg_digit<4>  |   18.384|
+Guess<3>       |Sevseg_digit<5>  |   18.842|
+Guess<3>       |Sevseg_digit<6>  |   18.424|
+Guess<4>       |Sevseg_digit<0>  |   19.177|
+Guess<4>       |Sevseg_digit<1>  |   19.395|
+Guess<4>       |Sevseg_digit<2>  |   19.103|
+Guess<4>       |Sevseg_digit<3>  |   19.040|
+Guess<4>       |Sevseg_digit<4>  |   18.997|
+Guess<4>       |Sevseg_digit<5>  |   19.455|
+Guess<4>       |Sevseg_digit<6>  |   19.037|
+Guess<5>       |Sevseg_digit<0>  |   21.260|
+Guess<5>       |Sevseg_digit<1>  |   21.478|
+Guess<5>       |Sevseg_digit<2>  |   21.186|
+Guess<5>       |Sevseg_digit<3>  |   21.123|
+Guess<5>       |Sevseg_digit<4>  |   21.080|
+Guess<5>       |Sevseg_digit<5>  |   21.538|
+Guess<5>       |Sevseg_digit<6>  |   21.120|
+Guess<6>       |Sevseg_digit<0>  |   21.496|
+Guess<6>       |Sevseg_digit<1>  |   21.714|
+Guess<6>       |Sevseg_digit<2>  |   21.422|
+Guess<6>       |Sevseg_digit<3>  |   21.359|
+Guess<6>       |Sevseg_digit<4>  |   21.316|
+Guess<6>       |Sevseg_digit<5>  |   21.774|
+Guess<6>       |Sevseg_digit<6>  |   21.356|
+Guess<7>       |Sevseg_digit<0>  |   21.759|
+Guess<7>       |Sevseg_digit<1>  |   21.977|
+Guess<7>       |Sevseg_digit<2>  |   21.685|
+Guess<7>       |Sevseg_digit<3>  |   21.622|
+Guess<7>       |Sevseg_digit<4>  |   21.579|
+Guess<7>       |Sevseg_digit<5>  |   22.037|
+Guess<7>       |Sevseg_digit<6>  |   21.619|
+Guess<8>       |Sevseg_digit<0>  |   21.213|
+Guess<8>       |Sevseg_digit<1>  |   21.431|
+Guess<8>       |Sevseg_digit<2>  |   21.139|
+Guess<8>       |Sevseg_digit<3>  |   21.076|
+Guess<8>       |Sevseg_digit<4>  |   21.033|
+Guess<8>       |Sevseg_digit<5>  |   21.491|
+Guess<8>       |Sevseg_digit<6>  |   21.073|
+Power          |Leds<0>          |    8.377|
+Power          |Leds<1>          |    8.101|
+Power          |Leds<2>          |    8.561|
+Power          |Leds<3>          |    8.687|
+Power          |Leds<4>          |    8.509|
+Power          |Leds<5>          |    7.623|
+Power          |Leds<6>          |    7.634|
+Power          |Leds<7>          |    7.410|
+Power          |Leds<8>          |    7.593|
+Power          |Leds<9>          |    8.216|
+Power          |Sevseg_Control<0>|    7.920|
+Power          |Sevseg_Control<1>|    8.397|
+Power          |Sevseg_Control<2>|    7.343|
+Power          |Sevseg_Control<3>|    7.160|
+Power          |Sevseg_Control<4>|    7.372|
+Power          |Sevseg_Control<5>|    7.555|
+Power          |Sevseg_Control<6>|    7.087|
+Power          |Sevseg_Control<7>|    6.889|
+Power          |Sevseg_digit<0>  |   15.090|
+Power          |Sevseg_digit<1>  |   15.506|
+Power          |Sevseg_digit<2>  |   15.306|
+Power          |Sevseg_digit<3>  |   15.187|
+Power          |Sevseg_digit<4>  |   15.052|
+Power          |Sevseg_digit<5>  |   15.648|
+Power          |Sevseg_digit<6>  |   14.857|
+Reset          |Leds<0>          |    7.584|
+Reset          |Leds<1>          |    7.338|
+Reset          |Leds<2>          |    8.088|
+Reset          |Leds<3>          |    7.924|
+Reset          |Leds<4>          |    7.510|
+Reset          |Leds<5>          |    6.885|
+Reset          |Leds<6>          |    7.616|
+Reset          |Leds<7>          |    7.396|
+Reset          |Leds<8>          |    7.441|
+Reset          |Leds<9>          |    8.383|
+Reset          |Sevseg_digit<0>  |   14.549|
+Reset          |Sevseg_digit<1>  |   14.965|
+Reset          |Sevseg_digit<2>  |   14.765|
+Reset          |Sevseg_digit<3>  |   14.646|
+Reset          |Sevseg_digit<4>  |   14.511|
+Reset          |Sevseg_digit<5>  |   15.107|
+Reset          |Sevseg_digit<6>  |   14.316|
+---------------+-----------------+---------+
+
+
+Analysis completed Thu Nov 29 22:05:16 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4521 MB
+
+
+

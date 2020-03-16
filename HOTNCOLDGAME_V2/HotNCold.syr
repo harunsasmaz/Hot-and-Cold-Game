@@ -1,0 +1,764 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: HotNCold.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "HotNCold.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "HotNCold"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-vq100
+
+---- Source Options
+Top Module Name                    : HotNCold
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/VHDL/HOTNCOLDGAME/RandGen.vhd" in Library work.
+Architecture behavioral of Entity randgen is up to date.
+Compiling vhdl file "D:/VHDL/HOTNCOLDGAME/Comparator.vhd" in Library work.
+Entity <comparator> compiled.
+Entity <comparator> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/VHDL/HOTNCOLDGAME/binToBCD.vhd" in Library work.
+Architecture behavioral of Entity bintobcd is up to date.
+Compiling vhdl file "D:/VHDL/HOTNCOLDGAME/ClkDiv.vhd" in Library work.
+Architecture behavioral of Entity clkdiv is up to date.
+Compiling vhdl file "D:/VHDL/HOTNCOLDGAME/SevSegDriver.vhd" in Library work.
+Architecture behavioral of Entity sevsegdriver is up to date.
+Compiling vhdl file "D:/VHDL/HOTNCOLDGAME/SevSegDecoder.vhd" in Library work.
+Architecture behavioral of Entity sevsegdecoder is up to date.
+Compiling vhdl file "D:/VHDL/HOTNCOLDGAME/Main.vhd" in Library work.
+Entity <hotncold> compiled.
+Entity <hotncold> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <HotNCold> in library <work> (architecture <behavioral>) with generics.
+	MSB = 4
+
+Analyzing hierarchy for entity <RandGen> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comparator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <binToBCD> in library <work> (architecture <behavioral>) with generics.
+	MSB = 4
+
+Analyzing hierarchy for entity <ClkDiv> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SevSegDriver> in library <work> (architecture <behavioral>) with generics.
+	MSB = 4
+
+Analyzing hierarchy for entity <SevSegDecoder> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <HotNCold> in library <work> (Architecture <behavioral>).
+	MSB = 4
+Entity <HotNCold> analyzed. Unit <HotNCold> generated.
+
+Analyzing Entity <RandGen> in library <work> (Architecture <behavioral>).
+Entity <RandGen> analyzed. Unit <RandGen> generated.
+
+Analyzing Entity <Comparator> in library <work> (Architecture <behavioral>).
+Entity <Comparator> analyzed. Unit <Comparator> generated.
+
+Analyzing generic Entity <binToBCD> in library <work> (Architecture <behavioral>).
+	MSB = 4
+Entity <binToBCD> analyzed. Unit <binToBCD> generated.
+
+Analyzing Entity <ClkDiv> in library <work> (Architecture <behavioral>).
+Entity <ClkDiv> analyzed. Unit <ClkDiv> generated.
+
+Analyzing generic Entity <SevSegDriver> in library <work> (Architecture <behavioral>).
+	MSB = 4
+Entity <SevSegDriver> analyzed. Unit <SevSegDriver> generated.
+
+Analyzing Entity <SevSegDecoder> in library <work> (Architecture <behavioral>).
+Entity <SevSegDecoder> analyzed. Unit <SevSegDecoder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <RandGen>.
+    Related source file is "D:/VHDL/HOTNCOLDGAME/RandGen.vhd".
+    Found 9-bit register for signal <temp>.
+    Found 1-bit xor4 for signal <temp$xor0000> created at line 34.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <RandGen> synthesized.
+
+
+Synthesizing Unit <Comparator>.
+    Related source file is "D:/VHDL/HOTNCOLDGAME/Comparator.vhd".
+    Found 32-bit register for signal <guessNumber>.
+    Found 32-bit subtractor for signal <guessNumber$addsub0000> created at line 72.
+    Found 32-bit comparator greatequal for signal <guessNumber$cmp_ge0000> created at line 76.
+    Found 32-bit comparator less for signal <guessNumber$cmp_lt0000> created at line 76.
+    Found 1-bit register for signal <hold>.
+    Found 32-bit adder for signal <interval$addsub0000>.
+    Found 32-bit subtractor for signal <interval$sub0000> created at line 56.
+    Found 10-bit register for signal <tempOut>.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0000> created at line 75.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0001> created at line 78.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0002> created at line 81.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0003> created at line 84.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0004> created at line 87.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0005> created at line 90.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0006> created at line 93.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0007> created at line 96.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0008> created at line 99.
+    Found 32-bit comparator less for signal <tempOut$cmp_lt0009> created at line 102.
+    Summary:
+	inferred  43 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+Unit <Comparator> synthesized.
+
+
+Synthesizing Unit <binToBCD>.
+    Related source file is "D:/VHDL/HOTNCOLDGAME/binToBCD.vhd".
+    Found 4-bit comparator greater for signal <bcd_3$cmp_gt0000> created at line 37.
+    Found 4-bit comparator greater for signal <bcd_3$cmp_gt0001> created at line 37.
+    Found 4-bit comparator greater for signal <bcd_3$cmp_gt0002> created at line 37.
+    Found 4-bit comparator greater for signal <bcd_3$cmp_gt0003> created at line 37.
+    Found 4-bit comparator greater for signal <bcd_3$cmp_gt0004> created at line 37.
+    Found 4-bit comparator greater for signal <bcd_3$cmp_gt0005> created at line 37.
+    Found 4-bit adder for signal <bcd_3_0$add0000> created at line 38.
+    Found 4-bit adder for signal <bcd_3_0$add0001> created at line 38.
+    Found 4-bit adder for signal <bcd_3_0$add0002> created at line 38.
+    Found 4-bit adder for signal <bcd_3_0$add0003> created at line 38.
+    Found 4-bit adder for signal <bcd_3_0$add0004> created at line 38.
+    Found 4-bit adder for signal <bcd_3_0$add0005> created at line 38.
+    Found 4-bit comparator greater for signal <bcd_7$cmp_gt0000> created at line 41.
+    Found 4-bit comparator greater for signal <bcd_7$cmp_gt0001> created at line 41.
+    Found 4-bit comparator greater for signal <bcd_7$cmp_gt0002> created at line 41.
+    Found 4-bit adder for signal <bcd_7_4$add0000> created at line 42.
+    Found 4-bit adder for signal <bcd_7_4$add0001> created at line 42.
+    Found 4-bit adder for signal <bcd_7_4$add0002> created at line 42.
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <binToBCD> synthesized.
+
+
+Synthesizing Unit <ClkDiv>.
+    Related source file is "D:/VHDL/HOTNCOLDGAME/ClkDiv.vhd".
+    Found 19-bit up counter for signal <COUNTER>.
+    Found 19-bit comparator lessequal for signal <COUNTER$cmp_le0000> created at line 43.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <ClkDiv> synthesized.
+
+
+Synthesizing Unit <SevSegDriver>.
+    Related source file is "D:/VHDL/HOTNCOLDGAME/SevSegDriver.vhd".
+    Found 3-bit up counter for signal <COUNTER>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <SevSegDriver> synthesized.
+
+
+Synthesizing Unit <SevSegDecoder>.
+    Related source file is "D:/VHDL/HOTNCOLDGAME/SevSegDecoder.vhd".
+    Found 32x7-bit ROM for signal <SEVSEG_BUS>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <SevSegDecoder> synthesized.
+
+
+Synthesizing Unit <HotNCold>.
+    Related source file is "D:/VHDL/HOTNCOLDGAME/Main.vhd".
+Unit <HotNCold> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 21
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 2
+ 4-bit adder                                           : 18
+# Counters                                             : 2
+ 19-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 10-bit register                                       : 1
+ 32-bit register                                       : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 31
+ 19-bit comparator lessequal                           : 1
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator less                                : 11
+ 4-bit comparator greater                              : 18
+# Xors                                                 : 1
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 21
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 2
+ 4-bit adder                                           : 18
+# Counters                                             : 2
+ 19-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+# Comparators                                          : 31
+ 19-bit comparator lessequal                           : 1
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator less                                : 11
+ 4-bit comparator greater                              : 18
+# Xors                                                 : 1
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <HotNCold> ...
+
+Optimizing unit <RandGen> ...
+
+Optimizing unit <Comparator> ...
+
+Optimizing unit <binToBCD> ...
+
+Optimizing unit <SevSegDriver> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block HotNCold, actual ratio is 43.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : HotNCold.ngr
+Top Level Output File Name         : HotNCold
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 39
+
+Cell Usage :
+# BELS                             : 874
+#      GND                         : 1
+#      INV                         : 66
+#      LUT1                        : 5
+#      LUT2                        : 103
+#      LUT2_D                      : 1
+#      LUT3                        : 84
+#      LUT4                        : 221
+#      LUT4_D                      : 3
+#      MUXCY                       : 251
+#      MUXF5                       : 23
+#      VCC                         : 1
+#      XORCY                       : 115
+# FlipFlops/Latches                : 74
+#      FD                          : 1
+#      FDE                         : 70
+#      FDR                         : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 38
+#      IBUF                        : 13
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-5 
+
+ Number of Slices:                      275  out of    704    39%  
+ Number of Slice Flip Flops:             74  out of   1408     5%  
+ Number of 4 input LUTs:                483  out of   1408    34%  
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of     68    57%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------+-----------------------------+-------+
+Clock Signal                                   | Clock buffer(FF name)       | Load  |
+-----------------------------------------------+-----------------------------+-------+
+CLK                                            | BUFGP                       | 28    |
+hz1(clock/HUNDREDHZCLOCK_cmp_eq0000_wg_cy<4>:O)| BUFG(*)(comp/guessNumber_31)| 46    |
+-----------------------------------------------+-----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.702ns (Maximum Frequency: 149.208MHz)
+   Minimum input arrival time before clock: 14.390ns
+   Maximum output required time after clock: 22.180ns
+   Maximum combinational path delay: 22.695ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 6.702ns (frequency: 149.208MHz)
+  Total number of paths / destination ports: 4176 / 28
+-------------------------------------------------------------------------
+Delay:               6.702ns (Levels of Logic = 30)
+  Source:            clock/COUNTER_0 (FF)
+  Destination:       clock/COUNTER_18 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: clock/COUNTER_0 to clock/COUNTER_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.495   0.559  clock/COUNTER_0 (clock/COUNTER_0)
+     LUT4:I0->O            1   0.561   0.000  clock/Mcompar_COUNTER_cmp_le0000_lut<0> (clock/Mcompar_COUNTER_cmp_le0000_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  clock/Mcompar_COUNTER_cmp_le0000_cy<0> (clock/Mcompar_COUNTER_cmp_le0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcompar_COUNTER_cmp_le0000_cy<1> (clock/Mcompar_COUNTER_cmp_le0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcompar_COUNTER_cmp_le0000_cy<2> (clock/Mcompar_COUNTER_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcompar_COUNTER_cmp_le0000_cy<3> (clock/Mcompar_COUNTER_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcompar_COUNTER_cmp_le0000_cy<4> (clock/Mcompar_COUNTER_cmp_le0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcompar_COUNTER_cmp_le0000_cy<5> (clock/Mcompar_COUNTER_cmp_le0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcompar_COUNTER_cmp_le0000_cy<6> (clock/Mcompar_COUNTER_cmp_le0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcompar_COUNTER_cmp_le0000_cy<7> (clock/Mcompar_COUNTER_cmp_le0000_cy<7>)
+     MUXCY:CI->O          20   0.065   1.003  clock/Mcompar_COUNTER_cmp_le0000_cy<8> (clock/COUNTER_cmp_le0000)
+     LUT2:I1->O            1   0.562   0.000  clock/Mcount_COUNTER_lut<0> (clock/Mcount_COUNTER_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  clock/Mcount_COUNTER_cy<0> (clock/Mcount_COUNTER_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<1> (clock/Mcount_COUNTER_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<2> (clock/Mcount_COUNTER_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<3> (clock/Mcount_COUNTER_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<4> (clock/Mcount_COUNTER_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<5> (clock/Mcount_COUNTER_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<6> (clock/Mcount_COUNTER_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<7> (clock/Mcount_COUNTER_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<8> (clock/Mcount_COUNTER_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<9> (clock/Mcount_COUNTER_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<10> (clock/Mcount_COUNTER_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<11> (clock/Mcount_COUNTER_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<12> (clock/Mcount_COUNTER_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<13> (clock/Mcount_COUNTER_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<14> (clock/Mcount_COUNTER_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<15> (clock/Mcount_COUNTER_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  clock/Mcount_COUNTER_cy<16> (clock/Mcount_COUNTER_cy<16>)
+     MUXCY:CI->O           0   0.065   0.000  clock/Mcount_COUNTER_cy<17> (clock/Mcount_COUNTER_cy<17>)
+     XORCY:CI->O           1   0.654   0.000  clock/Mcount_COUNTER_xor<18> (clock/Mcount_COUNTER18)
+     FDE:D                     0.197          clock/COUNTER_18
+    ----------------------------------------
+    Total                      6.702ns (5.140ns logic, 1.562ns route)
+                                       (76.7% logic, 23.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'hz1'
+  Clock period: 5.972ns (frequency: 167.449MHz)
+  Total number of paths / destination ports: 3615 / 90
+-------------------------------------------------------------------------
+Delay:               5.972ns (Levels of Logic = 34)
+  Source:            comp/guessNumber_0 (FF)
+  Destination:       comp/guessNumber_31 (FF)
+  Source Clock:      hz1 rising
+  Destination Clock: hz1 rising
+
+  Data Path: comp/guessNumber_0 to comp/guessNumber_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.495   0.607  comp/guessNumber_0 (comp/guessNumber_0)
+     LUT1:I0->O            1   0.561   0.000  comp/Msub_guessNumber_addsub0000_cy<0>_rt (comp/Msub_guessNumber_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.523   0.000  comp/Msub_guessNumber_addsub0000_cy<0> (comp/Msub_guessNumber_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<1> (comp/Msub_guessNumber_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<2> (comp/Msub_guessNumber_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<3> (comp/Msub_guessNumber_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<4> (comp/Msub_guessNumber_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<5> (comp/Msub_guessNumber_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<6> (comp/Msub_guessNumber_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<7> (comp/Msub_guessNumber_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<8> (comp/Msub_guessNumber_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<9> (comp/Msub_guessNumber_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<10> (comp/Msub_guessNumber_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<11> (comp/Msub_guessNumber_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<12> (comp/Msub_guessNumber_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<13> (comp/Msub_guessNumber_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<14> (comp/Msub_guessNumber_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<15> (comp/Msub_guessNumber_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<16> (comp/Msub_guessNumber_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<17> (comp/Msub_guessNumber_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<18> (comp/Msub_guessNumber_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<19> (comp/Msub_guessNumber_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<20> (comp/Msub_guessNumber_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<21> (comp/Msub_guessNumber_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<22> (comp/Msub_guessNumber_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<23> (comp/Msub_guessNumber_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<24> (comp/Msub_guessNumber_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<25> (comp/Msub_guessNumber_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<26> (comp/Msub_guessNumber_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<27> (comp/Msub_guessNumber_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<28> (comp/Msub_guessNumber_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<29> (comp/Msub_guessNumber_addsub0000_cy<29>)
+     MUXCY:CI->O           0   0.065   0.000  comp/Msub_guessNumber_addsub0000_cy<30> (comp/Msub_guessNumber_addsub0000_cy<30>)
+     XORCY:CI->O           1   0.654   0.423  comp/Msub_guessNumber_addsub0000_xor<31> (comp/guessNumber_addsub0000<31>)
+     LUT2:I1->O            1   0.562   0.000  comp/guessNumber_mux0000<0>2 (comp/guessNumber_mux0000<0>)
+     FDE:D                     0.197          comp/guessNumber_31
+    ----------------------------------------
+    Total                      5.972ns (4.942ns logic, 1.030ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 47 / 37
+-------------------------------------------------------------------------
+Offset:              3.182ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       rand/temp_8 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Reset to rand/temp_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   0.824   0.944  Reset_IBUF (Reset_IBUF)
+     LUT2:I0->O            9   0.561   0.697  rand/temp_not00011 (rand/temp_not0001)
+     FDE:CE                    0.156          rand/temp_0
+    ----------------------------------------
+    Total                      3.182ns (1.541ns logic, 1.641ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'hz1'
+  Total number of paths / destination ports: 1174319 / 85
+-------------------------------------------------------------------------
+Offset:              14.390ns (Levels of Logic = 43)
+  Source:            Guess<0> (PAD)
+  Destination:       comp/tempOut_6 (FF)
+  Destination Clock: hz1 rising
+
+  Data Path: Guess<0> to comp/tempOut_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.824   0.559  Guess_0_IBUF (Guess_0_IBUF)
+     LUT2:I0->O            1   0.561   0.000  comp/Msub_interval_sub0000_lut<0> (comp/Msub_interval_sub0000_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  comp/Msub_interval_sub0000_cy<0> (comp/Msub_interval_sub0000_cy<0>)
+     XORCY:CI->O           6   0.654   0.569  comp/Msub_interval_sub0000_xor<1> (comp/interval_sub0000<1>)
+     INV:I->O              1   0.562   0.000  comp/Madd_interval_not0000<1>1_INV_0 (comp/Madd_interval_not0000<1>)
+     MUXCY:S->O            1   0.523   0.000  comp/Madd_interval_addsub0000_cy<1> (comp/Madd_interval_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<2> (comp/Madd_interval_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<3> (comp/Madd_interval_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<4> (comp/Madd_interval_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<5> (comp/Madd_interval_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<6> (comp/Madd_interval_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<7> (comp/Madd_interval_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<8> (comp/Madd_interval_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<9> (comp/Madd_interval_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<10> (comp/Madd_interval_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<11> (comp/Madd_interval_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<12> (comp/Madd_interval_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<13> (comp/Madd_interval_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<14> (comp/Madd_interval_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<15> (comp/Madd_interval_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<16> (comp/Madd_interval_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<17> (comp/Madd_interval_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<18> (comp/Madd_interval_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<19> (comp/Madd_interval_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<20> (comp/Madd_interval_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<21> (comp/Madd_interval_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<22> (comp/Madd_interval_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<23> (comp/Madd_interval_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<24> (comp/Madd_interval_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<25> (comp/Madd_interval_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<26> (comp/Madd_interval_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<27> (comp/Madd_interval_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<28> (comp/Madd_interval_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  comp/Madd_interval_addsub0000_cy<29> (comp/Madd_interval_addsub0000_cy<29>)
+     XORCY:CI->O           2   0.654   0.403  comp/Madd_interval_addsub0000_xor<30> (comp/interval_addsub0000<30>)
+     LUT3:I2->O            9   0.561   0.720  comp/interval<30>1 (comp/interval<30>)
+     LUT3:I2->O            1   0.561   0.000  comp/Mcompar_guessNumber_cmp_ge0000_lut<9>1 (comp/Mcompar_guessNumber_cmp_ge0000_lut<9>1)
+     MUXCY:S->O            1   0.523   0.000  comp/Mcompar_guessNumber_cmp_ge0000_cy<9>_0 (comp/Mcompar_guessNumber_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           3   0.179   0.451  comp/Mcompar_guessNumber_cmp_ge0000_cy<10> (comp/Mcompar_guessNumber_cmp_ge0000_cy<10>)
+     INV:I->O              1   0.562   0.465  comp/Mcompar_guessNumber_cmp_ge0000_cy<10>_inv_INV_0 (comp/tempOut_cmp_lt0001)
+     LUT4_D:I0->O          2   0.561   0.382  comp/tempOut_mux0021<3>21 (comp/N6)
+     LUT4_D:I3->O          3   0.561   0.453  comp/tempOut_mux0021<3>31 (comp/N7)
+     LUT4:I3->O            1   0.561   0.000  comp/tempOut_mux0021<6> (comp/tempOut_mux0021<6>)
+     FDE:D                     0.197          comp/tempOut_3
+    ----------------------------------------
+    Total                     14.390ns (10.387ns logic, 4.003ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'hz1'
+  Total number of paths / destination ports: 3089 / 25
+-------------------------------------------------------------------------
+Offset:              13.371ns (Levels of Logic = 10)
+  Source:            comp/tempOut_3 (FF)
+  Destination:       Sevseg_digit<4> (PAD)
+  Source Clock:      hz1 rising
+
+  Data Path: comp/tempOut_3 to Sevseg_digit<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.495   0.465  comp/tempOut_3 (comp/tempOut_3)
+     LUT3:I0->O            2   0.561   0.488  comp/led_out<3>1 (Leds_3_OBUF)
+     LUT4:I0->O            1   0.561   0.359  driver/SEV_SEG_DATA_cmp_eq000710 (driver/SEV_SEG_DATA_cmp_eq000710)
+     LUT4:I3->O            1   0.561   0.359  driver/SEV_SEG_DATA_cmp_eq000717_SW0 (N103)
+     LUT4:I3->O            9   0.561   0.763  driver/SEV_SEG_DATA_cmp_eq000717 (driver/SEV_SEG_DATA_cmp_eq0007)
+     LUT4:I1->O            1   0.562   0.359  driver/SEV_SEG_DATA<0>240 (driver/SEV_SEG_DATA<0>240)
+     LUT4:I3->O            1   0.561   0.000  driver/SEV_SEG_DATA<0>270_F (N151)
+     MUXF5:I0->O          13   0.229   0.944  driver/SEV_SEG_DATA<0>270 (sevsegdata<0>)
+     LUT4:I0->O            1   0.561   0.000  decoder/Mrom_SEVSEG_BUS4_G (N148)
+     MUXF5:I1->O           1   0.229   0.357  decoder/Mrom_SEVSEG_BUS4 (Sevseg_digit_4_OBUF)
+     OBUF:I->O                 4.396          Sevseg_digit_4_OBUF (Sevseg_digit<4>)
+    ----------------------------------------
+    Total                     13.371ns (9.277ns logic, 4.094ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 69732 / 7
+-------------------------------------------------------------------------
+Offset:              22.180ns (Levels of Logic = 17)
+  Source:            rand/temp_7 (FF)
+  Destination:       Sevseg_digit<6> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: rand/temp_7 to Sevseg_digit<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.495   0.858  rand/temp_7 (rand/temp_7)
+     LUT4:I0->O            6   0.561   0.592  binBCD2/bcd_3_mux00011 (binBCD2/bcd_3_mux0001)
+     LUT4:I2->O            8   0.561   0.709  binBCD2/bcd_3_mux000211 (binBCD2/N10)
+     LUT3:I1->O            2   0.562   0.488  binBCD2/bcd_1_mux000221 (binBCD2/N51)
+     LUT4:I0->O            6   0.561   0.635  binBCD2/bcd_3_mux000311 (binBCD2/N111)
+     LUT2:I1->O            6   0.562   0.677  binBCD2/bcd_3_mux00032 (binBCD2/Madd_bcd_7_4_add0001_cy<0>)
+     LUT4:I0->O            1   0.561   0.380  binBCD2/Madd_bcd_7_4_add0001_cy<1>11 (binBCD2/Madd_bcd_7_4_add0001_cy<1>)
+     LUT4:I2->O            5   0.561   0.540  binBCD2/bcd_7_mux0001 (hundred_1<1>)
+     LUT4:I3->O            3   0.561   0.453  binBCD2/bcd_5_mux00011 (binBCD2/Madd_bcd_7_4_add0002_lut<2>)
+     LUT4:I3->O            3   0.561   0.453  binBCD2/bcd_7_mux000211 (binBCD2/N9)
+     LUT4:I3->O            1   0.561   0.359  binBCD2/bcd_5_mux000221 (binBCD2/N21)
+     LUT4:I3->O            1   0.561   0.423  driver/SEV_SEG_DATA<2>141 (driver/SEV_SEG_DATA<2>141)
+     LUT4:I1->O            1   0.562   0.380  driver/SEV_SEG_DATA<2>236 (driver/SEV_SEG_DATA<2>236)
+     LUT3:I2->O            1   0.561   0.380  driver/SEV_SEG_DATA<2>376 (driver/SEV_SEG_DATA<2>376)
+     LUT4:I2->O           14   0.561   0.958  driver/SEV_SEG_DATA<2>505 (sevsegdata<2>)
+     LUT4:I0->O            1   0.561   0.000  decoder/Mrom_SEVSEG_BUS1_F (N137)
+     MUXF5:I0->O           1   0.229   0.357  decoder/Mrom_SEVSEG_BUS1 (Sevseg_digit_0_OBUF)
+     OBUF:I->O                 4.396          Sevseg_digit_0_OBUF (Sevseg_digit<0>)
+    ----------------------------------------
+    Total                     22.180ns (13.538ns logic, 8.642ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 70724 / 25
+-------------------------------------------------------------------------
+Delay:               22.695ns (Levels of Logic = 18)
+  Source:            Guess<7> (PAD)
+  Destination:       Sevseg_digit<6> (PAD)
+
+  Data Path: Guess<7> to Sevseg_digit<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.824   0.805  Guess_7_IBUF (Guess_7_IBUF)
+     LUT4:I0->O            8   0.561   0.666  binBCD1/bcd_3_mux00011 (binBCD1/bcd_3_mux0001)
+     LUT4:I2->O            8   0.561   0.709  binBCD1/bcd_3_mux000211 (binBCD1/N10)
+     LUT3:I1->O            2   0.562   0.488  binBCD1/bcd_1_mux000221 (binBCD1/N51)
+     LUT4:I0->O            6   0.561   0.635  binBCD1/bcd_3_mux000311 (binBCD1/N111)
+     LUT2:I1->O            5   0.562   0.646  binBCD1/bcd_3_mux00032 (binBCD1/Madd_bcd_7_4_add0001_cy<0>)
+     LUT4:I0->O            2   0.561   0.382  binBCD1/Madd_bcd_7_4_add0001_cy<1>11 (binBCD1/Madd_bcd_7_4_add0001_cy<1>)
+     LUT4:I3->O            4   0.561   0.501  binBCD1/bcd_7_mux0001 (hundred<1>)
+     LUT4:I3->O            3   0.561   0.453  binBCD1/bcd_5_mux00011 (binBCD1/Madd_bcd_7_4_add0002_lut<2>)
+     LUT4:I3->O            3   0.561   0.453  binBCD1/bcd_7_mux000211 (binBCD1/N9)
+     LUT4:I3->O            1   0.561   0.465  binBCD1/bcd_5_mux000221 (binBCD1/N21)
+     LUT4:I0->O            1   0.561   0.465  driver/SEV_SEG_DATA<2>320 (driver/SEV_SEG_DATA<2>320)
+     LUT4:I0->O            1   0.561   0.465  driver/SEV_SEG_DATA<2>362 (driver/SEV_SEG_DATA<2>362)
+     LUT3:I0->O            1   0.561   0.380  driver/SEV_SEG_DATA<2>376 (driver/SEV_SEG_DATA<2>376)
+     LUT4:I2->O           14   0.561   0.958  driver/SEV_SEG_DATA<2>505 (sevsegdata<2>)
+     LUT4:I0->O            1   0.561   0.000  decoder/Mrom_SEVSEG_BUS1_F (N137)
+     MUXF5:I0->O           1   0.229   0.357  decoder/Mrom_SEVSEG_BUS1 (Sevseg_digit_0_OBUF)
+     OBUF:I->O                 4.396          Sevseg_digit_0_OBUF (Sevseg_digit<0>)
+    ----------------------------------------
+    Total                     22.695ns (13.866ns logic, 8.829ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.34 secs
+ 
+--> 
+
+Total memory usage is 4534848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

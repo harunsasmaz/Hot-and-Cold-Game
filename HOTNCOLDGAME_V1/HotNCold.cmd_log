@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 
+xst -intstyle ise -ifn "D:/VHDL/HOTNCOLDGAME/HotNCold.xst" -ofn "D:/VHDL/HOTNCOLDGAME/HotNCold.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MainUcf.ucf -p xc3s50a-vq100-5 HotNCold.ngc HotNCold.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o HotNCold_map.ncd HotNCold.ngd HotNCold.pcf 
+par -w -intstyle ise -ol high -t 1 HotNCold_map.ncd HotNCold.ncd HotNCold.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml HotNCold.twx HotNCold.ncd -o HotNCold.twr HotNCold.pcf -ucf MainUcf.ucf 
+bitgen -intstyle ise -f HotNCold.ut HotNCold.ncd 

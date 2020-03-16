@@ -1,0 +1,7 @@
+[Inputs]
+clock
+reset
+en
+[Outputs]
+Random
+[BiDir]

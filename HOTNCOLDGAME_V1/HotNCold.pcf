@@ -1,0 +1,46 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Nov 29 22:05:03 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Sevseg_digit<0>" LOCATE = SITE "P64" LEVEL 1;
+COMP "Sevseg_digit<1>" LOCATE = SITE "P98" LEVEL 1;
+COMP "Sevseg_digit<2>" LOCATE = SITE "P73" LEVEL 1;
+COMP "Sevseg_digit<3>" LOCATE = SITE "P72" LEVEL 1;
+COMP "Sevseg_digit<4>" LOCATE = SITE "P65" LEVEL 1;
+COMP "Sevseg_digit<5>" LOCATE = SITE "P62" LEVEL 1;
+COMP "Sevseg_digit<6>" LOCATE = SITE "P71" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P40" LEVEL 1;
+COMP "Leds<0>" LOCATE = SITE "P16" LEVEL 1;
+COMP "Leds<1>" LOCATE = SITE "P13" LEVEL 1;
+COMP "Leds<2>" LOCATE = SITE "P6" LEVEL 1;
+COMP "Leds<3>" LOCATE = SITE "P3" LEVEL 1;
+COMP "Leds<4>" LOCATE = SITE "P93" LEVEL 1;
+COMP "Leds<5>" LOCATE = SITE "P89" LEVEL 1;
+COMP "Leds<6>" LOCATE = SITE "P86" LEVEL 1;
+COMP "Leds<7>" LOCATE = SITE "P84" LEVEL 1;
+COMP "Leds<8>" LOCATE = SITE "P83" LEVEL 1;
+COMP "Leds<9>" LOCATE = SITE "P77" LEVEL 1;
+COMP "Reset" LOCATE = SITE "P35" LEVEL 1;
+COMP "Guess<0>" LOCATE = SITE "P15" LEVEL 1;
+COMP "Guess<1>" LOCATE = SITE "P12" LEVEL 1;
+COMP "Guess<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "Guess<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "Power" LOCATE = SITE "P78" LEVEL 1;
+COMP "Guess<4>" LOCATE = SITE "P94" LEVEL 1;
+COMP "Guess<5>" LOCATE = SITE "P90" LEVEL 1;
+COMP "Guess<6>" LOCATE = SITE "P88" LEVEL 1;
+COMP "Guess<7>" LOCATE = SITE "P85" LEVEL 1;
+COMP "Guess<8>" LOCATE = SITE "P82" LEVEL 1;
+COMP "check" LOCATE = SITE "P33" LEVEL 1;
+COMP "Enable" LOCATE = SITE "P34" LEVEL 1;
+COMP "Sevseg_Control<0>" LOCATE = SITE "P50" LEVEL 1;
+COMP "Sevseg_Control<1>" LOCATE = SITE "P49" LEVEL 1;
+COMP "Sevseg_Control<2>" LOCATE = SITE "P52" LEVEL 1;
+COMP "Sevseg_Control<3>" LOCATE = SITE "P56" LEVEL 1;
+COMP "Sevseg_Control<4>" LOCATE = SITE "P59" LEVEL 1;
+COMP "Sevseg_Control<5>" LOCATE = SITE "P57" LEVEL 1;
+COMP "Sevseg_Control<6>" LOCATE = SITE "P60" LEVEL 1;
+COMP "Sevseg_Control<7>" LOCATE = SITE "P61" LEVEL 1;
+SCHEMATIC END;
+

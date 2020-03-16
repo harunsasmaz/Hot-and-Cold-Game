@@ -1,0 +1,7 @@
+vhdl work "D:\VHDL\HOTNCOLDGAME\SevSegDriver.vhd"
+vhdl work "D:\VHDL\HOTNCOLDGAME\SevSegDecoder.vhd"
+vhdl work "D:\VHDL\HOTNCOLDGAME\RandGen.vhd"
+vhdl work "D:\VHDL\HOTNCOLDGAME\Comparator.vhd"
+vhdl work "D:\VHDL\HOTNCOLDGAME\ClkDiv.vhd"
+vhdl work "D:\VHDL\HOTNCOLDGAME\binToBCD.vhd"
+vhdl work "D:\VHDL\HOTNCOLDGAME\Main.vhd"
